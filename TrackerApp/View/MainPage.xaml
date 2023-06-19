@@ -4,11 +4,13 @@
              x:Class="TrackerApp.View.MainPage"
              xmlns:viewmodel="clr-namespace:TrackerApp.ViewModel"
              x:DataType="viewmodel:MainViewModel"
-             Title="MainPage">
+             Title="MainPage"
+             xmlns:controls="clr-namespace:TrackerApp.Controls">
     <VerticalStackLayout>
-        <Label 
-            Text="{Binding Text}"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <controls:CustomMapControl InitialPosition="{Binding InitialPin}"
+                                   PinList="{Binding MapPinsList}"
+                                   HeightRequest="400"
+                                   IsShowingUser="True"
+                                   IsTrafficEnabled="True" />
     </VerticalStackLayout>
 </ContentPage>

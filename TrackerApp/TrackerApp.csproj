@@ -54,14 +54,19 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
+		<PackageReference Include="Microsoft.Maui.Controls.Maps" Version="7.0.86" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <None Remove="ViewModel\" />
 	  <None Remove="View\" />
+	  <None Remove="Controls\" />
+	  <None Remove="Models\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="ViewModel\" />
 	  <Folder Include="View\" />
+	  <Folder Include="Controls\" />
+	  <Folder Include="Models\" />
 	</ItemGroup>
 </Project>
